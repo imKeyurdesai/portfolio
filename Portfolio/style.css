@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+body {
+    background-image: url("background.jpg");
+}
+
+header {
+    height: max-content;
+    display: flex;
+}
+
+.name {
+    /* margin-left: 90px; */
+    margin-left: 10%;
+    width: max-content;
+    height: 75px;
+    font-weight: 700;
+}
+
+#alex {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+#stark {
+    display: inline-block;
+    color: rgb(236, 15, 69);
+}
+
+.navbar {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 15%;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+#hire {
+    margin-left: 20px;
+}
+
+.rborder {
+    border: 2px solid rgb(236, 15, 69);
+    border-radius: 25px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    height: max-content;
+}
+
+.text {
+    margin: 100px 0px 50px 50px;
+    padding: auto;
+    font-size: 23px;
+}
+
+.para {
+    font-size: 15px;
+}
+
+.para2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#fullstack {
+    color: rgb(236, 15, 69);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.introlink {
+    margin: 10px;
+}
+
+#seeportfolio {
+    padding: 8px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(236, 15, 69);
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+#contact {
+    background-color: transparent;
+    border: 2px solid rgb(236, 15, 69);
+    border-radius: 25px;
+    padding: 8px;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.img {
+    width: 280px;
+}
+
+.gradient-border {
+    margin: 75px 25px 25px 0px;
+    height: 350.03px;
+    --borderWidth: 10px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+a:hover {
+    scale: 1.3;
+    letter-spacing: 2.5px;
+    border-top: 2px solid #ef4e7b;
+    border-bottom: 2px solid #ef4e7b;
+    transition: all 250ms ease-in-out;
+}
+
+#hire:hover {
+    border: none;
+    letter-spacing: normal;
+}
+
+.rborder:hover {
+    scale: 1.2;
+    background-color: rgb(236, 15, 69);
+}
+
+#seeportfolio:hover {
+    scale: 1.2;
+    transition: all 100ms ease-in-out;
+}
+
+#contact:hover {
+    scale: 1.2;
+    transition: all 100ms ease-in-out;
+    background-color: rgb(236, 15, 69);
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-size: cover;
+    }
+
+    .name {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    .navbar {
+        padding: 15px 0px 0px 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    a {
+        margin-right: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .gradient-border {
+        width: 100%;
+        width: max-content;
+        margin: 50px auto 0px auto;
+    }
+
+
+    a:hover {
+        scale: 1;
+        letter-spacing: normal;
+
+    }
+}
